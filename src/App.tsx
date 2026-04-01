@@ -114,7 +114,7 @@ export default function App() {
           </div>
           
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden xl:flex items-center gap-10">
             {navItems.map((item) => (
               <a 
                 key={item.name} 
@@ -136,7 +136,7 @@ export default function App() {
           {/* Mobile Menu Toggle */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-[#2D342B]' : 'text-white'}`}
+            className={`xl:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-[#2D342B]' : 'text-white'}`}
           >
             {isMenuOpen ? <X /> : <Menu />}
           </button>
@@ -211,7 +211,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-8xl lg:text-9xl font-bold leading-[1.1] tracking-tight mb-8"
+            className="text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-bold leading-[1.2] tracking-tight mb-8 break-keep"
           >
             더 나은 일상, <br />
             더 나은 <span className="text-[#C5D8C1]">내일.</span>
@@ -231,7 +231,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col md:flex-row items-center justify-center gap-4"
           >
             <a 
               href="tel:063-211-5560" 
@@ -256,8 +256,8 @@ export default function App() {
             <motion.div {...fadeIn} className="flex-1">
               <div className="relative">
                 <div className="absolute -top-10 -left-10 w-32 h-32 bg-[#F4F7F2] rounded-full -z-10" />
-                <span className="text-[#5B8C51] font-bold tracking-widest uppercase text-xs mb-4 block">Director's Message</span>
-                <h2 className="text-4xl md:text-6xl font-bold text-[#2D342B] leading-tight mb-8">
+                <h2 className="text-[#5B8C51] font-bold tracking-widest uppercase text-xs mb-4 block">Director's Message</h2>
+                <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold text-[#2D342B] leading-tight mb-8 break-keep">
                   어르신의 행복이 <br />
                   <span className="text-[#5B8C51]">우리의 보람</span>입니다
                 </h2>
@@ -323,7 +323,7 @@ export default function App() {
       <section id="philosophy" className="py-24 md:py-40 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
           <span className="text-[#5B8C51] font-bold tracking-widest uppercase text-xs mb-4 block">01. Space Showcase</span>
-          <h2 className="text-4xl md:text-7xl font-bold text-[#2D342B] leading-tight tracking-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-7xl font-bold text-[#2D342B] leading-tight tracking-tight break-keep">
             시원하고 <span className="text-[#5B8C51]">쾌적한 공간</span>
           </h2>
         </div>
@@ -397,7 +397,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
             <motion.div {...fadeIn}>
               <span className="text-[#5B8C51] font-bold tracking-widest uppercase text-xs mb-4 block">02. Premium Rehab</span>
-              <h2 className="text-4xl md:text-7xl font-bold text-[#2D342B] leading-tight tracking-tight mb-8">
+              <h2 className="text-2xl sm:text-4xl md:text-7xl font-bold text-[#2D342B] leading-tight tracking-tight mb-8 break-keep">
                 최고의 장비가 <br />
                 <span className="text-[#5B8C51]">최고의 회복</span>을
               </h2>
@@ -443,7 +443,7 @@ export default function App() {
           </div>
 
           {/* Equipment Showcase */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { 
                 title: "꿈의 자전거", 
@@ -603,7 +603,7 @@ export default function App() {
           <div className="flex flex-col lg:flex-row gap-24 mb-24">
             <div className="lg:w-1/3">
               <span className="text-[#5B8C51] font-bold tracking-widest uppercase text-xs mb-4 block">FAQ</span>
-              <h2 className="text-4xl md:text-6xl font-bold text-[#2D342B] leading-tight tracking-tight mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#2D342B] leading-tight tracking-tight mb-8">
                 자주 묻는 <br /> 질문
               </h2>
               <p className="text-[#2D342B]/60 leading-relaxed">
@@ -683,7 +683,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <span className="text-[#C5D8C1] font-bold tracking-widest uppercase text-xs mb-4 block">Get In Touch</span>
-            <h2 className="text-5xl md:text-8xl font-bold leading-tight tracking-tight mb-8">
+            <h2 className="text-4xl sm:text-6xl md:text-8xl font-bold leading-tight tracking-tight mb-8">
               CONTACT <span className="text-[#C5D8C1]">US.</span>
             </h2>
           </div>
