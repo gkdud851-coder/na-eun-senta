@@ -462,7 +462,7 @@ export default function App() {
                 tag: "Premium Care"
               },
               { 
-                title: "슬링폴링운동치료", 
+                title: "슬링/풀링운동치료", 
                 image: "images/슬링 운동 치료.JPG", 
                 desc: (
                   <>
