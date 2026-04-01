@@ -53,7 +53,7 @@ export default function App() {
   }, []);
 
   const slideImages = [
-    "images/슬라이드사진1.JPG",
+    "images/슬라이드사진1.jpg",
     "images/슬라이드사진2.jpg",
     "images/슬라이드사진3.JPG",
     "images/슬라이드사진4.JPG",
@@ -191,7 +191,7 @@ export default function App() {
       <section id="home" className="relative h-[90vh] md:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="images/전경사진.JPG" 
+            src="images/전경사진.jPG" 
             alt="전주 더나은 주간보호 전경" 
             className="w-full h-full object-cover"
           />
