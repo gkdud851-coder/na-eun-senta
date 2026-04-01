@@ -452,7 +452,7 @@ export default function App() {
                 tag: "Cognitive Rehab"
               },
               { 
-                title: "셀링턴 마사지", 
+                title: "셀리턴 마사지", 
                 image: "images/셀링턴.JPG", 
                 desc: (
                   <>
@@ -737,7 +737,7 @@ export default function App() {
               </div>
               <div className="space-y-2 text-sm text-[#2D342B]/60 font-medium">
                 <p>주소: <a href="https://map.naver.com/p/entry/place/2029572245" target="_blank" rel="noopener noreferrer" className="hover:text-[#5B8C51] transition-colors underline underline-offset-4 decoration-dotted">전북 전주시 덕진구 기린대로 957, 1층</a></p>
-                <p>TEL: <a href="tel:063-211-5560" className="hover:text-[#5B8C51] transition-colors">063-211-5560</a> | FAX: 063-211-5561</p>
+                <p>TEL: <a href="tel:063-211-5560" className="hover:text-[#5B8C51] transition-colors">063-211-5560</a> | FAX: 063-211-5563</p>
               </div>
             </div>
             <div className="flex gap-12">
