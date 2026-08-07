@@ -425,30 +425,30 @@ export default function App() {
             </motion.h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
             {[
-              { num: "01", icon: <Home className="w-6 h-6 sm:w-7 sm:h-7" />, title: "1층 단독 센터", desc: "계단 없는 안전한 이동과 탁 트인 개방감", href: "#why-first-floor" },
-              { num: "02", icon: <Sun className="w-6 h-6 sm:w-7 sm:h-7" />, title: "시원하고 쾌적한 공간", desc: "전주 시내권 유일의 1층 테라스와 텃밭", href: "#philosophy" },
-              { num: "03", icon: <Activity className="w-6 h-6 sm:w-7 sm:h-7" />, title: "최고의 재활 장비", desc: "억 단위 프리미엄 장비로 건강한 회복", href: "#rehab" },
-              { num: "04", icon: <Heart className="w-6 h-6 sm:w-7 sm:h-7" />, title: "10년 노하우 케어", desc: "송천동 1호점으로 검증된 전문 케어", href: "#care" }
+              { num: "01", icon: <Home className="w-5 h-5 md:w-7 md:h-7" />, title: "1층 단독 센터", desc: "계단 없는 안전한 이동과 탁 트인 개방감", href: "#why-first-floor" },
+              { num: "02", icon: <Sun className="w-5 h-5 md:w-7 md:h-7" />, title: "시원하고 쾌적한 공간", desc: "전주 시내권 유일의 1층 테라스와 텃밭", href: "#philosophy" },
+              { num: "03", icon: <Activity className="w-5 h-5 md:w-7 md:h-7" />, title: "최고의 재활 장비", desc: "억 단위 프리미엄 장비로 건강한 회복", href: "#rehab" },
+              { num: "04", icon: <Heart className="w-5 h-5 md:w-7 md:h-7" />, title: "10년 노하우 케어", desc: "송천동 1호점으로 검증된 전문 케어", href: "#care" }
             ].map((item, idx) => (
               <motion.a
                 key={idx}
                 href={item.href}
                 {...fadeIn}
                 transition={{ delay: idx * 0.1 }}
-                className="group p-5 sm:p-7 bg-white rounded-3xl border border-[#E8F0E5] hover:border-[#5B8C51]/40 hover:shadow-lg transition-all flex flex-col"
+                className="group p-4 md:p-7 bg-white rounded-2xl md:rounded-3xl border border-[#E8F0E5] hover:border-[#5B8C51]/40 hover:shadow-lg transition-all flex flex-col"
               >
-                <div className="flex items-center justify-between mb-4 sm:mb-5">
-                  <span className="text-2xl sm:text-3xl font-black text-[#5B8C51]/25 group-hover:text-[#5B8C51]/50 transition-colors">{item.num}</span>
-                  <div className="p-2.5 sm:p-3 bg-[#F4F7F2] text-[#5B8C51] rounded-2xl group-hover:bg-[#5B8C51] group-hover:text-white transition-colors">
+                <div className="flex items-center justify-between mb-3 md:mb-5">
+                  <span className="text-xl md:text-3xl font-black text-[#5B8C51]/25 group-hover:text-[#5B8C51]/50 transition-colors">{item.num}</span>
+                  <div className="p-2 md:p-3 bg-[#F4F7F2] text-[#5B8C51] rounded-xl md:rounded-2xl group-hover:bg-[#5B8C51] group-hover:text-white transition-colors">
                     {item.icon}
                   </div>
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-[#2D342B] mb-1.5 sm:mb-2 leading-snug">{item.title}</h3>
-                <p className="text-sm text-[#2D342B]/60 leading-relaxed flex-1">{item.desc}</p>
-                <span className="mt-4 text-xs font-bold text-[#5B8C51] flex items-center gap-1">
-                  자세히 보기 <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                <h3 className="text-sm md:text-xl font-bold text-[#2D342B] mb-1.5 md:mb-2 leading-snug">{item.title}</h3>
+                <p className="text-xs md:text-sm text-[#2D342B]/60 leading-relaxed flex-1">{item.desc}</p>
+                <span className="mt-3 md:mt-4 text-[11px] md:text-xs font-bold text-[#5B8C51] flex items-center gap-1">
+                  자세히 보기 <ChevronRight className="w-3 h-3 md:w-3.5 md:h-3.5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </motion.a>
             ))}
@@ -626,7 +626,7 @@ export default function App() {
       {/* Rehab */}
       <section id="rehab" className="py-16 sm:py-24 md:py-40 bg-[#F4F7F2]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16 sm:mb-24">
+          <div className="mb-12 sm:mb-16">
             <motion.div {...fadeIn}>
               <span className="text-[#5B8C51] font-bold tracking-widest uppercase text-xs mb-3 block">03. Premium Rehab</span>
               <h2 className="text-2xl sm:text-4xl md:text-7xl font-bold text-[#2D342B] leading-tight tracking-tight mb-6 sm:mb-8 flex items-start gap-3 sm:gap-4">
@@ -638,7 +638,7 @@ export default function App() {
                 어르신들의 건강한 내일을 약속합니다.
               </p>
               
-              <div className="grid grid-cols-2 gap-4 sm:gap-8">
+              <div className="grid grid-cols-2 gap-4 sm:gap-8 max-w-md">
                 <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-[#E8F0E5]">
                   <Activity className="w-6 h-6 sm:w-8 sm:h-8 text-[#5B8C51] mb-2 sm:mb-4" />
                   <h4 className="text-2xl sm:text-3xl font-bold mb-1">100%</h4>
@@ -651,33 +651,22 @@ export default function App() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative aspect-[4/5] md:aspect-video rounded-3xl sm:rounded-[40px] overflow-hidden shadow-2xl group"
-            >
-              <img 
-                src="images/스모비.jpg" 
-                alt="스모비(Smovey) 운동기구" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-5 left-5 right-5 md:bottom-8 md:left-8 md:right-8">
-                <span className="px-3 py-1 sm:px-4 sm:py-2 bg-[#5B8C51] text-white rounded-full text-[10px] md:text-xs font-bold mb-2 sm:mb-4 inline-block">New Equipment</span>
-                <h3 className="text-lg sm:text-xl md:text-3xl font-bold text-white mb-1.5 sm:mb-2">스모비(Smovey) 진동 운동</h3>
-                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
-                  오스트리아에서 개발된 특수 진동 기구로, <span className="text-[#C5D8C1] font-bold">파킨슨병 어르신들의 보행 능력과 균형 감각 개선</span>에 탁월한 효과가 입증된 최고의 장비입니다.
-                </p>
-              </div>
-            </motion.div>
           </div>
 
           {/* Equipment Showcase */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {[
+              { 
+                title: "스모비 진동 운동", 
+                image: "images/스모비.jpg", 
+                desc: (
+                  <>
+                    오스트리아 개발 특수 진동 기구. <span className="font-bold text-[#5B8C51] bg-[#E8F0E5] px-1 rounded">파킨슨 보행·균형 개선</span>에 탁월한 효과가 입증된 장비
+                  </>
+                ),
+                tag: "New Equipment",
+                isNew: true
+              },
               { 
                 title: "꿈의 자전거", 
                 image: "images/꿈의자전거.JPG", 
@@ -709,8 +698,13 @@ export default function App() {
                 key={idx}
                 {...fadeIn}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white rounded-3xl overflow-hidden shadow-sm border border-[#E8F0E5] group"
+                className="relative bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-[#E8F0E5] group"
               >
+                {item.isNew && (
+                  <span className="absolute top-3 left-3 z-10 px-3 py-1 bg-[#5B8C51] text-white rounded-full text-[9px] md:text-[10px] font-bold shadow-md">
+                    NEW
+                  </span>
+                )}
                 <div className="aspect-[4/3] overflow-hidden">
                   <img 
                     src={item.image} 
@@ -720,10 +714,10 @@ export default function App() {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <div className="p-6 sm:p-8">
-                  <span className="text-[10px] font-bold text-[#5B8C51] uppercase tracking-widest mb-2 sm:mb-3 block">{item.tag}</span>
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#2D342B] mb-3">{item.title}</h3>
-                  <p className="text-[#2D342B]/60 text-sm leading-relaxed">{item.desc}</p>
+                <div className="p-4 md:p-6">
+                  <span className="text-[9px] md:text-[10px] font-bold text-[#5B8C51] uppercase tracking-widest mb-2 block">{item.tag}</span>
+                  <h3 className="text-base md:text-xl font-bold text-[#2D342B] mb-2 md:mb-3">{item.title}</h3>
+                  <p className="text-[#2D342B]/60 text-xs md:text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
